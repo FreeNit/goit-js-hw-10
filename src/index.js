@@ -57,7 +57,7 @@ function createCountriesMarkup(countries) {
                 alt='${name.official}'
                 class='countries__flag'
               />
-              <p class='contries__name'>${name.official}</p>
+              <p class='countries__name'>${name.official}</p>
             </li>
           `;
     })
