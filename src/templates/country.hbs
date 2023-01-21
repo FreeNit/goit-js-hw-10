@@ -1,10 +1,18 @@
-<ul class='countries'>
-  <li class='countries__item'>
-    <img src='{{flags.svg}}' alt='{{name.official}}' class='countries__flag' />
-    <p class='contries__name'>{{name.official}}</p>
+<ul class='country'>
+  <li class='country__item country__item--combined'>
+    <img src='{{flags.svg}}' alt='{{name.official}}' class='country__flag' />
+    <p class='country__name'>{{name.official}}</p>
   </li>
-  <li class='countries__item'>Capital: {{capital}}</li>
-  <li class='countries__item'>Population: {{population}}</li>
-  <li class='countries__item'>Languages:
-    {{#each languages}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</li>
+  <li class='country__item'>
+    <span class='country__label'>Capital:</span>
+    {{capital}}
+  </li>
+  <li class='country__item'>
+    <span class='country__label'>Population:</span>
+    {{population}}
+  </li>
+  <li class='country__item'>
+    <span class='country__label'>Languages:</span>
+    {{#each languages}} {{this}} {{/each}}
+  </li>
 </ul>
