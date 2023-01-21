@@ -1,12 +1,4 @@
-<ul class='countries'>
-  {{!-- {{#each countries}} --}}
-  <li class='countries__item'>
-    <img
-      src='{{country.flags.svg}}'
-      alt='{{country.name.official}}'
-      class='countries__flag'
-    />
-    <p class='contries__name'>{{country.name.official}}</p>
-  </li>
-  {{!-- {{/each}} --}}
-</ul>
+<li class='country__item'>
+  <img src='{{flags.svg}}' alt='{{name.official}}' class='country__flag' />
+  <span class='country__name'>{{name.official}}</span>
+</li>

@@ -1,0 +1,10 @@
+<ul class='countries'>
+  <li class='countries__item'>
+    <img src='{{flags.svg}}' alt='{{name.official}}' class='countries__flag' />
+    <p class='contries__name'>{{name.official}}</p>
+  </li>
+  <li class='countries__item'>Capital: {{capital}}</li>
+  <li class='countries__item'>Population: {{population}}</li>
+  <li class='countries__item'>Languages:
+    {{#each languages}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</li>
+</ul>
