@@ -1,6 +1,6 @@
 import './css/styles.css';
 import { fetchCountries } from './JS/components/fetchCountries';
-// import countriesTemplate from './templates/countries-cards.hbs';
+import countriesTemplate from './templates/countries-cards.hbs';
 // import countryTemplate from './templates/country.hbs';
 
 // var debounce = require('lodash.debounce');
