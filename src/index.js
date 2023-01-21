@@ -1,5 +1,7 @@
 import './css/styles.css';
 import { fetchCountries } from './JS/components/fetchCountries';
+
+// Handelbars templates
 import countriesTemplate from './templates/countries-cards.hbs';
 import countryTemplate from './templates/country.hbs';
 
@@ -33,6 +35,7 @@ inputEl.addEventListener(
         countryListEl.innerHTML = '';
 
         if (countries.length > 10) {
+          console.log(countries);
           Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
@@ -40,7 +43,7 @@ inputEl.addEventListener(
 
         // * from 2 - 10
         if (countries.length <= 10 && countries.length >= 2) {
-          // console.log(countries);
+          console.log(countries);
           // console.log(createCountriesMarkup(countries));
           // const countriesMarkup = createCountriesMarkup(countries);
           // countriesEl.innerHTML = countriesMarkup;
@@ -59,7 +62,7 @@ inputEl.addEventListener(
         }
 
         if (countries.length === 1) {
-          // console.log(countries[0]);
+          console.log(countries[0]);
 
           countryListEl.innerHTML = '';
           const country = countries[0];
@@ -71,7 +74,7 @@ inputEl.addEventListener(
       })
       .catch(error => {
         {
-          // console.log(error);
+          console.log(error);
           Notify.failure('Oops, there is no country with that name');
           countryEl.innerHTML = '';
           countryListEl.innerHTML = '';
