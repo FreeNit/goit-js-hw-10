@@ -13,6 +13,6 @@
   </li>
   <li class='country__item'>
     <span class='country__label'>Languages:</span>
-    {{#each languages}} {{this}} {{/each}}
+    {{#each languages}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
   </li>
 </ul>

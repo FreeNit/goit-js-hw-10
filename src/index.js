@@ -35,7 +35,7 @@ inputEl.addEventListener(
         countryListEl.innerHTML = '';
 
         if (countries.length > 10) {
-          console.log(countries);
+          // console.log(countries);
           Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
@@ -43,7 +43,7 @@ inputEl.addEventListener(
 
         // * from 2 - 10
         if (countries.length <= 10 && countries.length >= 2) {
-          console.log(countries);
+          // console.log(countries);
           // console.log(createCountriesMarkup(countries));
           // const countriesMarkup = createCountriesMarkup(countries);
           // countriesEl.innerHTML = countriesMarkup;
@@ -62,13 +62,13 @@ inputEl.addEventListener(
         }
 
         if (countries.length === 1) {
-          console.log(countries[0]);
+          // console.log(countries[0]);
 
           countryListEl.innerHTML = '';
           const country = countries[0];
           // console.log(countryTemplate(country));
-          const countryMarkup = countryTemplate(country);
 
+          const countryMarkup = countryTemplate(country);
           countryEl.innerHTML = countryMarkup;
         }
       })
